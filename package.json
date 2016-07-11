@@ -1,0 +1,30 @@
+{
+  "name": "react-native-pulse-animation",
+  "version": "0.1.0",
+  "description": "Pulse animation component for react native",
+  "main": "pulse-animation.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danawhite/react-native-pulse-animation.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "pulse",
+    "animation"
+  ],
+  "author": "Dana White <brightdanawhite@gmail.com> (http://brightideas.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danawhite/react-native-pulse-animation/issues"
+  },
+  "homepage": "https://github.com/danawhite/react-native-pulse-animation#readme",
+  "dependencies": {
+    "react": "^15.2.1",
+    "react-native": "^0.29.0",
+    "react-native-linear-gradient": "^1.5.12"
+  }
+}
