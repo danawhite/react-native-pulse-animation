@@ -77,7 +77,7 @@ export default class PulseAnimation extends Component {
         this.setState({ pulses });
     }
 
-    this.renderOutlinePulse() {
+    renderOutlinePulse() {
         this.state.pulses.map( pulse => {
             return (
                 <View style={[styles.pulseContainer, {width: this.state.maxDiameter, height: this.state.maxDiameter}]}>
@@ -91,7 +91,7 @@ export default class PulseAnimation extends Component {
                                          opacity: pulse.opacity,
                                          borderRadius: pulse.diameter / 2,
                                          left: pulse.left,
-                                         borderColor:
+                                         borderColor: this.props.borderColor,
                                          top: pulse.centerOffset,
                                          left: pulse.centerOffset
                                          } ]}>
@@ -103,7 +103,7 @@ export default class PulseAnimation extends Component {
         })
     }
 
-    renderDefaultOutline() {
+    renderDefaultPulse() {
         return (
             <View style={[styles.container, {top: this.state.top}]}>
                 <View style={[styles.pulseContainer, {width: this.state.maxDiameter, height: this.state.maxDiameter}]}>
@@ -117,7 +117,7 @@ export default class PulseAnimation extends Component {
                                          opacity: pulse.opacity,
                                          borderRadius: pulse.diameter / 2,
                                          left: pulse.left,
-                                         borderColor:
+                                         borderColor: this.props.borderColor,
                                          top: pulse.centerOffset,
                                          left: pulse.centerOffset
                                          } ]}>
